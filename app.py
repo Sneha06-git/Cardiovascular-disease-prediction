@@ -57,9 +57,9 @@ def predict():
 
         # Convert prediction into readable result
         if prediction == 1:
-            result = "Cardiovascular Disease Detected"
+            result = "Higher Risk Indicated for Cardiovascular Disease"
         else:
-            result = "No Cardiovascular Disease Detected"
+            result = "Lower Risk Indicated for Cardiovascular Disease"
 
         return jsonify({
             "prediction": prediction,
