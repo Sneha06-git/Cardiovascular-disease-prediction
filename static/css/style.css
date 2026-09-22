@@ -1,0 +1,169 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #212529;
+}
+
+
+/* Header */
+.project-header {
+    background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+    color: white;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.project-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.project-header p {
+    margin: 10px 0 0;
+    font-size: 1.05rem;
+    opacity: 0.95;
+}
+
+
+/* Main Card */
+.prediction-card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Card Header */
+.prediction-card .card-header {
+    background: white;
+    border-bottom: 1px solid #e9ecef;
+    padding: 28px;
+}
+
+.card-header h2 {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-header p {
+    margin: 0;
+    color: #6c757d;
+}
+
+
+/* Card Body */
+.prediction-card .card-body {
+    padding: 30px;
+}
+
+
+/* Form Labels */
+.form-label {
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+
+/* Form Inputs */
+.form-control,
+.form-select {
+    min-height: 46px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+}
+
+
+/* BMI Preview */
+.bmi-preview {
+    margin-top: 10px;
+    padding: 14px;
+    background: #f1f6ff;
+    border-radius: 8px;
+    color: #0d6efd;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* Predict Button */
+.predict-btn {
+    min-width: 260px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.predict-btn:hover {
+    transform: translateY(-1px);
+}
+
+
+/* Result Box */
+.result-box {
+    padding: 22px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.result-box h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.result-box p {
+    margin-bottom: 8px;
+}
+
+
+/* Disclaimer */
+.disclaimer {
+    padding: 18px;
+    background: #fff8e1;
+    border: 1px solid #ffe69c;
+    border-radius: 10px;
+    color: #664d03;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .project-header {
+        padding: 35px 15px;
+    }
+
+    .project-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .project-header p {
+        font-size: 0.95rem;
+    }
+
+    .prediction-card .card-header,
+    .prediction-card .card-body {
+        padding: 22px;
+    }
+
+    .predict-btn {
+        width: 100%;
+    }
+}
